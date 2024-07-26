@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AUTONOMOUS VEHICLE</title>
+	<link rel="stylesheet" type="text/css" href="a.css">
+</head>
+<body>
+	<h1 class="HEAD">OBSTACLE AVOIDING ROBOT</h1>
+
+	<P><h3>ABSTRACT :</h3>
+Autonomous robot is an intelligent device that can automatically sense the obstacle in front of it and avoid them by turning itself in another direction. If robot finds any obstacle it changes the direction and continue moving.This design allows the robot to navigate in an unknown environment by avoiding collisions, which is a primary requirement for any autonomous mobile robot.The application of the this robot is not limited and it is used in most of the military organizations now which helps carry out many risky jobs that cannot be done by any soldiers. This Autonomous vehicle robot is built using an ultrasonic sensor and Arduino. Here an Ultrasonic sensor is use to sense the obstacles in the path by calculating the distance between the robot and obstacle. Testing and evaluation of the project involves measuring the accuracy of the robot's obstacle detection and avoidance capabilities, including its speed, range, turning radius, and stability. The obstacle avoidance project can be used in various fields such as home automation, surveillance systems, and manufacturing industries, where autonomous robots can prevent accidents and improve efficiency.The project is design to build an obstacle avoidance robotic vehicle using ultrasonic sensors for its movement. A microcontroller (ATmega328) is used to achieve the desired operation. A robot is a machine that can perform task automatically or with guidance. It can be programmed to control the way buttons, motors, switches, lights, and other electronic parts work together.The creation of an obstacle avoiding project is an excellent way to showcase the potential of autonomous robotics and their many practical applications. The capacity of these systems to identify and navigate obstacles autonomously can save lives and reduce human error in critical applications</P>
+
+<h3>COMPONENTS REQUIRED :</h3>
+<ul>
+	<li>ARDUINO UNO</li>
+	<li>Ultrasonic sensor</li>
+	<li>L298N motor driver module</li>
+	<li>DC Motor</li>
+	<li> Servo motor</li>
+	<li>9V battery</li>
+	<li>Breadboard</li>
+	<li>Wheels</li>
+	<li>Jumper wires</li>
+</ul>
+<h4>ARDUINO UNO:</h4>
+<p>Arduino Uno is a microcontroller board based on the ATmega328P
+microcontroller. It is widely used for prototyping and developing embedded
+systems due to its simplicity and ease of use. The board has 14 digital input/output
+pins, 6 analog inputs, a USB connection, an ICSP header, and a reset button.</p>
+<h4>L298N DRIVER MODULE:</h4>
+<p>The L298N motor driver module is a popular motor driver chip that can be used to
+control DC motors, stepper motors, and even servo motors. This module provides
+the necessary hardware to control the speed and direction of the motor, making it a
+useful component in a wide range of robotics and automation projects.</p>
+<h4>ULTRASONIC SENSOR:</h4>
+<p>An ultrasonic sensor is a device that uses sound waves of high frequency to
+measure the distance to an object.</p>
+<h4>SERVO MOTOR:</h4>
+<p>A servo motor is a type of motor that is commonly used in robotics and automation
+applications. It is a high-precision motor that can rotate to specific angles, making
+it ideal for control applications that require precise movement. A servo motor
+consists of a DC motor, gearbox, and control circuitry.</p>
+<h3>CIRCUIT DIAGRAM:</h3>
+<img src="img/one.png">
+<h3>BLOCK DIAGRAM:</h3>
+<img src="img/new.png">
+<h3>WORKING PRINCIPLE :</h3>
+<p>Before going to working of the project, it is important to understand how the
+ultrasonic sensor works. The basic principle behind the working of ultrasonic
+sensor is as follows:
+Using an external trigger signal, the Trig pin on ultrasonic sensor is made logic
+high for at least 10Âµs. A sonic burst from the transmitter module is sent. This
+consists of 8 pulses of 40kHz.
+The signals return back after hitting a surface and the receiver detects this signal.
+The Echo pin is high from the time of sending the signal and receiving it. This time
+can be converted to distance using appropriate calculations.
+The aim of this project is to implement an obstacle avoiding robot using ultrasonic
+sensor and Arduino. All the connections are made as per the circuit diagram. The
+working of the project is explained below.
+When the robot is powered on, both the motors of the robot will run normally and
+the robot moves forward. During this time, the ultrasonic sensor continuously
+calculate the distance between the robot and the reflective surface.
+This information is processed by the Arduino. If the distance between the robot and
+the obstacle is less than 25cm, the Robot stops and scans in left and right directions
+for new distance using Servo Motor and Ultrasonic Sensor. If the distance towards
+the left side is more than that of the right side, the robot will prepare for a left turn.
+But first, it backs up a little bit and then activates the Left Wheel Motor in reversed
+in direction.
+Similarly, if the right distance is more than that of the left distance, the Robot
+prepares right rotation. This process continues forever and the robot keeps on
+moving without hitting any obstacle</p>
+<h3>RESULT:</h3>
+<img  src="IMG/THREE.PNG">
+
+
+
+<H3>APPLICATION :</H3>
+Autonomous vehicles, also known as self-driving or driverless vehicles, are
+becoming increasingly popular with the advancement of technology. Arduino is a popular platform for designing and developing autonomous vehicles due to its
+cost-effectiveness, ease of use, and versatility. Here are some of the applications of
+autonomous vehicles using Arduino:
+1. Automated Cars: Arduino can be used in developing automated cars that can
+drive without the need for human intervention. Arduino is capable of processing
+various inputs from sensors, including input from sensors such as ultrasonic,
+infrared, and radar, and creating appropriate outputs to control steering, braking,
+and acceleration systems.
+2. Agricultural Robots: Autonomous vehicles built with Arduino can be used in
+agriculture for planting, pruning, and crop management. They can be equipped
+with sensors to detect soil moisture and pH levels to optimize crop yield and
+reduce labor costs.
+3. Delivery Drones: With the rise of online shopping, delivery drones are becoming
+increasingly popular. Arduino-based autonomous vehicles can be used to deliver
+packages and provide other logistics services with high precision.
+4. Indoor Navigation: Autonomous vehicles built with Arduino can be used for
+indoor navigation in warehouses, manufacturing facilities, and smart homes. They
+can navigate through complex environments and avoid collisions using sensor data.
+5. Security Robots: Autonomous vehicles equipped with Arduino can be used to
+detect and respond to security threats. These robots can patrol buildings, detect
+intruders, and alert security personnel of potential problems.
+Overall, autonomous vehicles built with Arduino offer incredible potential for
+creating innovative applications that can revolutionize transportation, logistics, and
+security systems.
+
+
+
+
+
+
+
+
+
+</body>
+</html>

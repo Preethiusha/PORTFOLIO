@@ -1,0 +1,14 @@
+*{
+	background-color:#8AAAE5;
+	color:white;
+}
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 480px;
+}
+.new{
+	margin-left: 290px;
+}
+

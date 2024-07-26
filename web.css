@@ -1,0 +1,20 @@
+*{
+	background-image: url("img/nature.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+h1{
+	margin-left: 350px;
+	margin-right: auto;
+}
+ol.c{
+	list-style-type: square;
+}
+
+
+img{
+	width:500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
